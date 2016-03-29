@@ -20,6 +20,7 @@
     {
       "VsoBuildDefinition": "corefx-general",
       "ScriptFileName": "UpdateDependencies.ps1",
+      "GitHubUser": "dotnet-bot",
       "Arguments": [
         "-GitHubUser 'dotnet-bot'",
         "-GitHubEmail 'dotnet-bot@microsoft.com'",
