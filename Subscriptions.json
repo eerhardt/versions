@@ -23,7 +23,7 @@
       "Arguments": [
         "-GitHubUser 'dotnet-bot",
         "-GitHubEmail 'dotnet-bot@microsoft.com",
-        "-GitHubPassword $(DotNet-Bot.GitHubPassword)",
+        "-GitHubPassword $(DotNetBotGitHubPassword)",
         "-CoreFxVersionUrl 'https://raw.githubusercontent.com/eerhardt/versions/master/dotnet/corefx/master/Latest.txt",
         "-GitHubUpstreamOwner 'eerhardt",
         "-GitHubUpstreamBranch 'DependencyVersions"
