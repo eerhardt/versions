@@ -1,0 +1,33 @@
+{
+  "VsoBuildDefinitions": {
+    "cli-update-dependencies": {
+      "VsoProject": "DevDiv",
+      "VsoInstance": "devdiv.visualstudio.com",
+      "BuildDefinitionId": "808"
+    },
+    "corefx-general": {
+      "VsoProject": "DevDiv",
+      "VsoInstance": "devdiv.visualstudio.com",
+      "BuildDefinitionId": "1084"
+    }
+  },
+  "eerhardt/versions/master/dotnet/corefx/release/1.0.0-rc2/LKG.txt": [
+    {
+      "VsoBuildDefinition": "cli-update-dependencies"
+    }
+  ],
+  "eerhardt/versions/master/dotnet/corefx/master/Latest.txt": [
+    {
+      "VsoBuildDefinition": "corefx-general",
+      "ScriptFileName": "UpdateDependencies.ps1",
+      "Arguments": [
+        "-GitHubUser 'dotnet-bot",
+        "-GitHubEmail 'dotnet-bot@microsoft.com",
+        "-GitHubPassword $(DotNet-Bot.GitHubPassword)",
+        "-CoreFxVersionUrl 'https://raw.githubusercontent.com/eerhardt/versions/master/dotnet/corefx/master/Latest.txt",
+        "-GitHubUpstreamOwner 'eerhardt",
+        "-GitHubUpstreamBranch 'DependencyVersions"
+      ]
+    }
+  ]
+}
