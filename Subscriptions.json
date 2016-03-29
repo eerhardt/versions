@@ -21,12 +21,12 @@
       "VsoBuildDefinition": "corefx-general",
       "ScriptFileName": "UpdateDependencies.ps1",
       "Arguments": [
-        "-GitHubUser 'dotnet-bot",
-        "-GitHubEmail 'dotnet-bot@microsoft.com",
+        "-GitHubUser 'dotnet-bot'",
+        "-GitHubEmail 'dotnet-bot@microsoft.com'",
         "-GitHubPassword $(DotNetBotGitHubPassword)",
-        "-CoreFxVersionUrl 'https://raw.githubusercontent.com/eerhardt/versions/master/dotnet/corefx/master/Latest.txt",
-        "-GitHubUpstreamOwner 'eerhardt",
-        "-GitHubUpstreamBranch 'DependencyVersions"
+        "-CoreFxVersionUrl 'https://raw.githubusercontent.com/eerhardt/versions/master/dotnet/corefx/master/Latest.txt'",
+        "-GitHubUpstreamOwner 'eerhardt'",
+        "-GitHubUpstreamBranch 'DependencyVersions'"
       ]
     }
   ]
