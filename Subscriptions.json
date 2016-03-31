@@ -1,5 +1,6 @@
 {
   "NamedVsoBuildDefinitions": {
+    // A build definition capable of running any .ps1 script in the CoreFX repo
     "corefx-general": {
       "VsoProject": "DevDiv",
       "VsoInstance": "devdiv.visualstudio.com",
@@ -8,6 +9,7 @@
   },
   "Subscriptions": {
     "eerhardt/versions/master/dotnet/corefx/release/1.0.0-rc2/LKG.txt": [
+      // This subscription will bring the LKG CoreFX build into CLI
       {
         "VsoProject": "DevDiv",
         "VsoInstance": "devdiv.visualstudio.com",
@@ -15,17 +17,18 @@
       }
     ],
     "eerhardt/versions/master/dotnet/corefx/master/Latest.txt": [
+      // This subscription will bring the Latest CoreFX build into CorefX
       {
         "NamedVsoBuildDefinition": "corefx-general",
         "ScriptFileName": "UpdateDependencies.ps1",
         "Arguments": [
           "-GitHubUser dotnet-bot",
           "-GitHubEmail dotnet-bot@microsoft.com",
+          "-GitHubPassword $($Secrets['DotNetBotGitHubPassword'])",
           "-CoreFxVersionUrl https://raw.githubusercontent.com/eerhardt/versions/master/dotnet/corefx/master/Latest.txt",
           "-GitHubUpstreamOwner eerhardt",
           "-GitHubUpstreamBranch DependencyVersions"
-        ],
-        "DotNetBotPasswordArg": "GitHubPassword"
+        ]
       }
     ]
   }
