@@ -26,7 +26,7 @@
           "-GitHubEmail dotnet-bot@microsoft.com",
           "-GitHubPassword `$(`$Secrets['DotNetBotGitHubPassword'])",
           "-CoreFxVersionUrl https://raw.githubusercontent.com/eerhardt/versions/master/dotnet/corefx/master/Latest.txt",
-          "-GitHubPullRequestNotifications stephentoub;ericstj;ellismg;weshaggard;joshfree",
+          "-GitHubPullRequestNotifications 'stephentoub;ericstj;ellismg;weshaggard;joshfree'",
         ]
       }
     ]
