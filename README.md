@@ -1,2 +1,2 @@
-# versions
-A test repo to try out our versioning story
+# DEPRECATED: PLEASE USE https://github.com/dotnet/versions INSTEAD
+https://github.com/dotnet/versions
